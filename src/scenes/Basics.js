@@ -61,8 +61,8 @@ class Basics extends Phaser.Scene {
                     ease: 'Bounce.easeOut',
                     scale: 1,
                     angle: {
-                        from: 90,
-                        to: 180
+                        from: 0,
+                        to: 90
                     }
                 },
                 {
@@ -72,8 +72,8 @@ class Basics extends Phaser.Scene {
                         to: 10
                     },
                     angle: {
-                    from: 180,        
-                    to: 270
+                    from: 90,        
+                    to: 180
                     },
                     duration: 500,
                     ease: 'Sine.easeOut'
@@ -89,15 +89,18 @@ class Basics extends Phaser.Scene {
                     duration: 500,
                     ease: 'Bounce.easeOut', 
                     angle: {
-                        from: 270,        
-                        to: 360                                                 
+                        from: 180,        
+                        to: 270                                                
                 }
             },
                 {
                     y: 64,
                     duration: 500,
                     ease: 'Sine.easeOut',
-                    angle: 0    
+                    angle: {
+                        from: 270,
+                        to: 360
+                    }    
                 }
             ]
         })
